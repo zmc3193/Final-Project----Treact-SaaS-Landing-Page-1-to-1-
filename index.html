@@ -22,10 +22,6 @@
             
             <nav class="nav-links">
 
-                <button class="close-menu">
-                    &times;
-                </button>
-
                 <a href="#">About</a>
                 <a href="#">Blog</a>
                 <a href="#">Pricing</a>
@@ -33,6 +29,20 @@
                 <a href="#">Login</a>
                 <a href="#">Sign Up</a>
             </nav>
+
+            <div class="mobile-nav">
+
+                <button class="close-menu">&times;</button>
+
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+
+
+            </div>
 
     <!-- BURGER BUTTON -->
 
@@ -935,19 +945,19 @@ reveals.forEach(reveal => {
 
 const burger = document.querySelector(".burger");
 
-const navLinks = document.querySelector(".nav-links");
+const mobileNav = document.querySelector(".mobile-nav");
 
 const closeMenu = document.querySelector(".close-menu");
 
 burger.addEventListener("click", () => {
 
-    navLinks.classList.add("active");
+    mobileNav.classList.add("active");
 
 });
 
 closeMenu.addEventListener("click", () => {
 
-    navLinks.classList.remove("active");
+    mobileNav.classList.remove("active");
 
 });
 
