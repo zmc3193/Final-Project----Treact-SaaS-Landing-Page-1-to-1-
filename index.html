@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Free Modern React Templates & Components for building landing pages and UIs - Treact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
@@ -12,10 +13,13 @@
         <div class="container nav">
 
             <div class="logo">
-                Treact
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" alt="Treact logo">
+                    <span>Treact</span>
+                </a>
             </div>
 
-
+            
             <nav class="nav-links">
                 <a href="#">About</a>
                 <a href="#">Blog</a>
@@ -25,6 +29,12 @@
                 <a href="#">Sign Up</a>
             </nav>
 
+    <!-- BURGER BUTTON -->
+
+            <button class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
 
         </div>
      </header>
@@ -33,7 +43,7 @@
       <main>
 
         <!-- HERO -->
-         <section id="hero">
+         <section id="hero" class="reveal reveal-left">
             <div class="container hero">
 
                 <!-- LEFT SIDE -->
@@ -46,29 +56,65 @@
                         Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
                     </p>
 
+        <!-- EMAIL -->
+
+                    <div class="hero-email">
+                    <input type="text" placeholder="Your E-mail Address">
+
                     <a href="#" class="hero-btn">Get Started</a>
+                    </div>
+
+                    <div class="trusted-customers">
+                        <p>Our Trusted Customers</p>
+
+                    <div class="customer-logos">
+                        <img src="./images/img5.png" alt="">
+                    </div>
+                    
+
+                
+                </div>
+
+    
                  </div>
 
                  <!-- RIGHT SIDE -->
-                  <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Hero Image">
-                  </div>
+                 <div class="rightside-img">
+                    <img src="./images/img.svg" alt="">
+                 </div>
 
-            </div>
+              </div>
+
          </section>
 
          <!-- FEATURES -->
-          <section id="features">
+          <section id="features" class="reveal reveal-right">
 
             <div class="container">
 
-                <h2 class="section-title">Our Features</h2>
+                <div class="features-header">
+
+                <h5 class="feature--features1">
+                    <span class="feature--features2">FEATURES</span>
+                </h5>
+
+                <h2 class="section-title">We have Amazing 
+                    <span class="feature--features3">Service.</span></h2>
+
+                <p class="feature--features4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.</p>
+
+                </div>
+
+
 
                 <div class="features-grid">
 
                     <div class="feature">
                         <div class="feature-top">
-                            <div class="icon">🔒</div>
+                            <div class="feature-icon">
+                                <img src="./images/shield-icon.svg" alt="">
+                            </div>
                         <h3>Secure</h3>
                         </div>
                         <p>We strictly only deal with vendors that provide top notch security</p>
@@ -76,7 +122,9 @@
 
                      <div class="feature">
                         <div class="feature-top">
-                            <div class="icon">💬</div>
+                            <div class="feature-icon">
+                                <img src="./images/support-icon.svg" alt="">
+                            </div>
                         <h3>24/7 Support</h3>
                         </div>
                         <p>We strictly only deal with vendors that provide top notch security</p>
@@ -84,7 +132,9 @@
 
                      <div class="feature">
                         <div class="feature-top">
-                            <div class="icon">⚙️</div>
+                            <div class="feature-icon">
+                                <img src="./images/customize-icon.svg" alt="">
+                            </div>
                         <h3>Customizable</h3>
                         </div>
                         <p>We strictly only deal with vendors that provide top notch security</p>
@@ -92,7 +142,9 @@
 
                      <div class="feature">
                         <div class="feature-top">
-                            <div class="icon">🛡️</div>
+                            <div class="feature-icon">
+                                <img src="./images/reliable-icon.svg" alt="">
+                            </div>
                         <h3>Reliable</h3>
                         </div>
                         <p>We strictly only deal with vendors that provide top notch security</p>
@@ -100,7 +152,9 @@
 
                     <div class="feature">
                         <div class="feature-top">
-                            <div class="icon">⚡</div>
+                            <div class="feature-icon">
+                                <img src="./images/fast-icon.svg" alt="">
+                            </div>
                         <h3>Fast</h3>
                         </div>
                         <p>We strictly only deal with vendors that provide top notch security</p>
@@ -109,7 +163,9 @@
                     <div class="feature">
 
                         <div class="feature-top">
-                            <div class="icon">👍</div>
+                            <div class="feature-icon">
+                                <img src="./images/simple-icon.svg" alt="">
+                            </div>
                         <h3>Easy</h3>
                         </div>
                         <p>We strictly only deal with vendors that provide top notch security</p>
@@ -120,11 +176,18 @@
             </div>
           </section>
 
-          <section id="quality">
+          <section id="quality" class="reveal reveal-left">
             <div class="container quality">
                 <!-- LEFT SIDE -->
+
+                <div class="quality-header">
+
+                <h5 class="quality1">
+                    <span class="quality2">Quality Work</span>
+                </h5>
+
                  <div class="quality-text">
-                    <h2>Designed & Developed by Professionals.</h2>
+                    <h2>Designed & Developed by <span class="professional">Professionals.</span></h2>
 
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -136,29 +199,40 @@
 
                     <a href="#" class="quality-btn">Learn More</a>
                     </div>
+                    </div>
 
                     <!-- RIGHT SIDE -->
                      <div class="quality-image">
-                         <img src="https://picsum.photos/600/400" alt="Quality Work">
+                         <img src="./images/img6.png" alt="">
                      </div>
 
              </div>
           </section>
 
-          <section id="steps">
+          <section id="steps" class="reveal reveal-right">
             <div class="container steps">
 
                 <!-- LEFT SIDE (IMAGE) -->
                 <div class="steps-image">
-                    <img src="https://picsum.photos/600/500" alt="Steps Image">
+                    <img src="./images/img2.png" alt="">
                 </div>
 
 
                 <!-- RIGHT SIDE (TEXT) -->
 
-                <div class="steps-text">
-                    <h2>Easy to Get Started.</h2>
+                <div class="steps-header">
 
+                    
+                    <h5 class="steps1">
+                        <span class="steps2">steps</span>
+                    </h5>
+
+                    <h2>Easy to <span class="start">Get Started.</span></h2>
+
+                
+
+                <div class="steps-text">
+                    
                     <!-- STEP 1 -->
                     <div class="step">
                         <div class="step-number">01</div>
@@ -188,164 +262,683 @@
                 </div>
 
             </div>
+            
+        </section>
 
-          </section>
+        
+
+          <section id="principles" class="reveal reveal-left">
+                <div class="container">
+                    <div class="principles-wrapper">
+
+
+                        <!-- LEFT SIDE -->
+                         <div class="principles-content">
+                            <h5 class="value-label">
+                                Values
+                            </h5>
+
+                            <h2 class="section-title1">
+                                We Always Abide by Our <span class="principle">Principles.</span>
+                            </h2>
+
+                            <p class="value-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+
+                            <div class="values-grid">
+
+                                <div class="value-item">
+
+                                    <div class="value-top">
+                                        <div class="value-icon-green">
+                                            <i class="fa-solid fa-dollar-sign"></i>
+                                        </div>
+                                        <h3 class="affordable">
+                                        Affordable
+                                    </h3>
+                                    </div>
+                                  
+
+                                    <p class="offer">
+                                        We promise to offer you the best rate we can - at par with the industry standard.
+                                    </p>
+                                </div>
+
+                                <div class="value-item">
+                                    <div class="value-top">
+                                        <div class="value-icon-red">
+                                           <i class="fa-solid fa-suitcase"></i>
+                                        </div>
+                                        <h3 class="professionalism">Professionalism</h3>
+                                    </div>
+                                    <p class="assurance">We assure you that your templates are designed and created by professional designers.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="cta-button">Learn More</a>
+                         </div>
+
+                         <!-- RIGHT SIDE -->
+                          <div class="principles-image">
+                            <img src="./images/img3.svg" alt="">
+                          </div>
+        
+                    </div>
+                </div>
+
+
+            </section>
+
+
+
+
+
+
 
           <!--PRICING-->
-          <section id="pricing">
+          <section id="pricing" class="reveal reveal-right">
             <div class="container">
-                <h2 class="section-title">Pricing Plans</h2>
-                <p class="section-subtitle">
-                    Simple pricing plans designed for all kinds of users.
-                </p>
+                <div class="pricing-wrapper">
+                    <div class="pricing-header">
+                        <h5 class="pricing-label">Pricing</h5>
+                        <h2 class="pricing-title">Reasonable & Flexible <span class="plan">Plans.</span></h2>
+                        <p class="pricing-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+
+                    <div class="pricing-grid">
+
+                        <!-- CARD 1 -->
+
+                        <div class="pricing-card">
+
+                            <div class="card-accent green"></div>
+
+                            <div class="pricing-top">
+                                <h3>Personal</h3>
+                                <h2>$17.99</h2>
+                                <p>MONTHLY</p>
+                            </div>
+
+                            <div class="pricing-middle">
+                                <h4>For Individuals</h4>
+
+                                <p>30 Templates</p>
+                                <p>7 Landing Pages</p>
+                                <p>12 Internal Pages</p>
+                                <p>Basic Assistance</p>
+                            </div>
+
+                            <div class="pricing-bottom">
+                                <a href="#" class="cta-button1">Buy Now</a>
+                            </div>
+                            </div>
+
+                            <!-- CARD 2 -->
+
+                            <div class="pricing-card business-card">
+                                <div class="pricing-top">
+                                    <h3>Business</h3>
+                                    <h2>$37.99</h2>
+                                    <p>MONTHLY</p>
+                                </div>
+
+                                <div class="pricing-middle">
+                                    <h4>For Small Businesses</h4>
+
+                                    
+                                    <p>60 Templates</p>
+                                    <p>15 Landing Pages</p>
+                                    <p>22 Internal Pages</p>
+                                    <p>Priority Assistance</p>
+                                </div>
+
+                                <div class="pricing-bottom">
+                                    <a href="#" class="business-cta-button">Buy Now</a>
+                                </div>
+                            </div>
+
+                            <!-- CARD 3 -->
+                             <div class="pricing-card">
+                                <div class="card-accent red"></div>
+                                <div class="pricing-top">
+                                    <h3>Enterprise</h3>
+                                    <h2>$57.99</h2>
+                                    <p>MONTHLY</p>
+                                </div>
+
+                                <div class="pricing-middle">
+                                    <h4>For Large Companies</h4>
+
+                                    <p>90 Templates</p>
+                                    <p>27 Landing Pages</p>
+                                    <p>37 Internal Pages</p>
+                                    <p>Personal Assistance</p>
+                                </div>
+
+                                <div class="pricing-bottom">
+                                    <a href="#" class="cta-button2">Buy Now</a>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- TESTIMONIALS -->
+
+                 <!-- LEFT SIDE -->
+
+                 <section id="testimonials" class="reveal reveal-left">
+                    <div class="container">
+                        <div class="testimonial-wrapper">
+
+                            <div class="img">
+                                <img src="./images/img4.svg" alt="">
+                            </div>
 
 
-            <div class="pricing-grid">
+                <!-- RIGHT SIDE -->
 
-            <!-- CARD 1 -->
-            <div class="pricing-card">
-                <h3>Personal</h3>
-                <p class="price">$17.99</p>
-                <p class="billing">Monthly</p>
-                <ul class="pricing-features">
-                    <li>30 Templates</li>
-                    <li>7 Landing Pages</li>
-                    <li>12 Internal Pages</li>
-                    <li>Basic Assistance</li>
-                </ul>
+                   <div class="testimonial-content">
 
-                <a href="#" class="pricing-btn">Buy Now</a>
+                    <div class="testimonial-header">
+                                <h5>Testimonials</h5>
+                                <h2>Our Clients <span class="test">Love Us.</span></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                            </div>
+
+                            <div class="testimonials-slider">
+
+                                <!-- REVIEW 1 -->
+
+                                <div class="testimonial-review active">
+
+                                    <div class="stars">
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i>
+                                       <i class="fa-solid fa-star"></i> 
+                                    </div>
+
+                                    <h3>Love the Developer Experience and Design Principles!</h3>
+
+                                    <p>Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla paratur. Excepteur sint occaecat cupidatat non proident
+                                    ,sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                                    <div class="testimonial-bottom">
+
+                                        <div class="testimonial-user">
+
+                                            <img src="./images/user1.avif" alt="customer-photo1">
+
+                                            <div class="user-info">
+                                                <h4>Adam Cuppy</h4>
+                                                <span>Founder, EventsNYC</span>
+                                            </div>
+
+                                        </div>
+
+                            <div class="testimonial-arrows">
+
+                                 <button class="arrow-btn prev-btn">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+
+                            <div class="arrow-divider"></div>
+
+                                <button class="arrow-btn next-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- REVIEW 2 -->
+
+                                <div class="testimonial-review">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+
+                                    <h3>Amazing User Interface and Easy to Customize.</h3>
+
+                                    <p>Duios aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                                       sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                    </p>
+
+                                    <div class="testimonial-bottom">
+
+                                        <div class="testimonial-user">
+
+                                            <img src="./images/user2.avif" alt="customer-photo2">
+
+                                            <div class="user-info">
+                                                <h4>Sarah Johnson</h4>
+                                                    <span>CEO, DesignFlow</span>
+                                            </div>
+
+                                        </div>
+
+                            <div class="testimonial-arrows">
+
+                                 <button class="arrow-btn prev-btn">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+
+                            <div class="arrow-divider"></div>
+
+                                <button class="arrow-btn next-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                                    </div>
+
+                                </div>
+
+                    </div>
+
+                                    
+                </div>
+
+
+
             </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="faqs" class="reveal reveal-right">
+        <div class="container">
+            <div class="wrapper">
+                <div class="header-faqs">
+                    <h5>FAQS</h5>
+                    <h2>You have <span class="faqs1">Questions?</span></h2>
+                    <p>And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+               <div class="faq-list">
+
+                <!-- FAQ ITEM -->
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question1">
+                            Are all the templates easily customizable?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 
+                        </p>
+                    </div>
+                 </div>
+
+
+                 <!-- FAQ ITEM -->
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question1">
+                            How long do you usually support a standalone template for ?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        </p>
+                    </div>
+                 </div>
+
+                 <!-- FAQ ITEM -->
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question1">
+                            What kind of payment methods do you accept ?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        </p>
+                    </div>
+                 </div>
+
+                 <!-- FAQ ITEM -->
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question1">
+                            Is there a subscription service to get the latest templates ?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        </p>
+                    </div>
+                 </div>
+
+                 <!-- FAQ ITEM -->
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question1">
+                            Are the templates compatible with the React ?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        </p>
+                    </div>
+                 </div>
+
+                 <!-- FAQ ITEM -->
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="question1">
+                            Do you really support Internet Explorer 11 ?
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        </p>
+                    </div>
+                 </div>
+
+
+
+               </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pre-footer" class="reveal reveal-left">
+
+        <div class="container">
+
+            <div class="pre-footer--wrapper">
+                
+                <div class="circle circle-top"></div>
+                <div class="circle circle-bottom"></div>
+
+                <h5 class="pre">
+                    Developers all over the world are happily using Treact.
+                </h5>
+
+
+            <div class="pre-footer-buttons">
+
+                    <a href="#" class="get-started">Get Started</a>
+
+                    <a href="#" class="contact-us">Contact Us</a>
+
+                </div>
             
+        </div>
 
-            <!-- CARD 2 -->
-             <div class="pricing-card featured-card">
-                <h3>Business</h3>
-                <p class="price">$37.99</p>
-                <p class="billing">Monthly</p>
+        </div>
+    </section>
 
-                <ul class="pricing-features">
-                    <li>60 Templates</li>
-                    <li>15 Landing Pages</li>
-                    <li>22 Internal Pages</li>
-                    <li>Priority Assistance</li>
-                </ul>
-
-                <a href="#" class="pricing-btn featured-btn">Buy Now</a>
-             </div>
-
-             <!-- CARD 3 -->
-              <div class="pricing-card">
-                <h3>Enterprise</h3>
-                <p class="price">$57.99</p>
-                <p class="billing">Monthly</p>
-
-                <ul class="pricing-features">
-                      <li>90 Templates</li>
-                    <li>27 Landing Pages</li>
-                    <li>37 Internal Pages</li>
-                    <li>Personal Assistance</li>
-                </ul>
-              
-
-                <a href="#" class="pricing-btn">Buy Now</a>
-              </div>
-            </div>
-            </div>
-
-          </section>
-
-          <!--TESTIMONIALS-->
-          <section id="testimonials">
-            <div class="container">
-                <h2 class="section-title">Testimonials</h2>
-
-                <div class="testimonial">
-                    <div class="testimonial-image">
-                        <img src="images/person1.jpg" alt="Daniel Boone">
-                    </div>
-
-                    <div class="testimonial-text">
-                        <h3>Daniel Boone</h3>
-                        <p class="testimonial-role">Backend Software Developer</p>
-                        <p class="testimonial-description">
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial reverse">
-                    <div class="testimonial-image">
-                        <img src="images/person2.jpg" alt="Alyssa Mach">
-                    </div>
-
-                    <div class="testimonial-text">
-                        <h3>Alyssa Mach</h3>
-                        <p class="testimonial-role">Guest Relations Specialist</p>
-                        <p class="testimonial-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-            </div>
-          </section>
-
-          <section id="cta">
-            <div class="container">
-                <h2>Let's Get Started!</h2>
-                <p>Start your journey today with Beautiful Templates!</p>
-
-                <div class="cta-buttons">
-                    <a href="#" class="cta-button primary">Get Started!</a>
-                    <a href="#" class="cta-button secondary">Learn More!</a>
-                </div>
-            </div>
-          </section>
-
-      </main>
+</main>
 
       <!-- ==== FOOTER ==== -->
-       <footer id="footer">
-        <div class="container">
+       <footer id="footer" class="reveal reveal-right">
+        <div class="footer-container">
+            <div class="footer-wrap">
+                <div class="footer-top">
+                <div class="footer-column">
+                    <h5>Main</h5>
+                    <ul class="unorder1">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Blog</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">FAQS</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">Support</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5>Product</h5>
+                    <ul class="unorder2">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Log In</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Personal</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Business</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Team</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Press</h5>
+                    <ul class="unorder3">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Logos</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">Events</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">Stories</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">Office</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Team</h5>
+                    <ul class="unorder4">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Career</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Founders</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Culture</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">Onboarding</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5>Legal</h5>
+                    <ul class="unorder5">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-link">GDPR</a>
+                            </li>
+                             <li class="footer-list-item">
+                            <a href="#" class="footer-link">Privacy Policy</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">Terms of Service</a>
+                        </li>
+                         <li class="footer-list-item">
+                            <a href="#" class="footer-link">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+
+                </div>
+
+                <div class="break"></div>
+
+                <div class="footer-bottom">
+
+                <div class="logo-container">
+                    <img src="./images/treact.svg" alt="treact-logo">
+                    <h5>Treact Inc.</h5>
+                </div>
+
+                <p>&copy; 2018 Treact Inc. All Rights Reserved.</p>
+
+                <div class="socials">
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                      <a href="#" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                      <a href="#" class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
         
-        <div class="footer-top">
-            <div class="footer-brand">
-                <h3>Treact</h3>
-                <p>Beautiful templates built for modern businesses and creators</p>
-            </div>
-
-        <div class="footer-links">
-            <div class="footer-column">
-                <h4>Company</h4>
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
-            </div>
-
-            <div class="footer-column">
-                <h4>Product</h4>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Testimonials</a>
-            </div>
-
-             <div class="footer-column">
-                <h4>Support</h4>
-                <a href="#">Help Center</a>
-                <a href="#">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
-
-
-        </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 treact. All rights reserved.</p>
-        </div>
+       
 
         </div>
        </footer>
+
+       <script>
+
+const reviews = document.querySelectorAll(".testimonial-review");
+
+const nextBtns = document.querySelectorAll(".next-btn");
+const prevBtns = document.querySelectorAll(".prev-btn");
+
+let currentReview = 0;
+
+function showReview(index) {
+
+    reviews.forEach(review => {
+        review.classList.remove("active");
+    });
+
+    reviews[index].classList.add("active");
+}
+
+
+nextBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        currentReview++;
+
+        if (currentReview >= reviews.length) {
+            currentReview = 0;
+        }
+
+        showReview(currentReview);
+    });
+});
+
+prevBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        currentReview--;
+
+        if (currentReview < 0) {
+            currentReview = reviews.length - 1;
+        }
+
+        showReview(currentReview);
+    });
+});
+
+// FAQS JS 
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click" , () => {
+            item.classList.toggle("active");
+
+        });
+
+});
+
+// REVEAL ANIMATIONS 
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+reveals.forEach(reveal => {
+    
+    observer.observe(reveal);
+
+});
+
+const burger = document.querySelector(".burger");
+
+const navLinks = document.querySelector(".nav-links");
+
+burger.addEventListener("click" , () => {
+
+    navLinks.classList.toggle("active");
+
+});
+
+</script>
+
 </body>
 </html>
